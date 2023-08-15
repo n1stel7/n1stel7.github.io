@@ -107,6 +107,9 @@ img {
 	cursor: pointer;
 	color: red;
 }
+#vaciar-carrito {
+	margin-top: 10px;
+}
 
 table {
 	width: 100%;
@@ -329,3 +332,10 @@ footer {
 	}
 }
 
+@media (max-width:400px) {
+	#carrito {
+		font-size: 0.8em !important;
+		padding: 5px !important;
+	}
+
+}
