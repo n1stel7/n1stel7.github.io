@@ -93,6 +93,7 @@ img {
 	position: relative;
 }
 .submenu #carrito {
+	font-weight: normal;
 	display: none;
 	position: absolute;
 	right: 0;
@@ -251,7 +252,7 @@ footer {
 		padding: 8px;
 	}
 	#carrito {
-		padding: 15px;
+		padding: 12px !important;
 	}
 
 	.menu {
@@ -314,7 +315,7 @@ footer {
 	}
 
 	.products {
-		padding: 30px;
+		padding: 25px;
 	}
 	.product-content {
 		grid-template-columns: repeat(1, 1fr);
