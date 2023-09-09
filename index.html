@@ -3,26 +3,74 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>n1stel7 page</title>
+	<title>n1stel7</title>
+	<style>
+		body {
+			font-family: arial;
+			padding: 0;
+			margin: 0;
+			background: #1b1b1b;
+		}
+
+		.wrap {
+			width: 100%;
+			max-width: 1200px;
+			margin: auto;
+			height: 100vh;
+		}
+
+		.links {
+			padding: 15px;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			justify-content: stretch;
+			gap: 15px;
+		}
+
+		.links a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			top: 0;
+			z-index: 1;
+			height: 150px;
+			overflow: hidden;
+
+			box-shadow: 0 0 1px 1px rgba(255, 255, 255, .4);
+			color: #ddd;
+			text-decoration: none;
+			border-radius: 20px;
+			background-size: cover;
+			background-position: center;
+			font-weight: bolder;
+			transition: top .2s;
+		}
+		.links a::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .8));
+		}
+		.links a:hover {
+			top: -10px;
+		}
+	</style>
 </head>
 <body>
 	
-
-	<ul>
-		<li>	
-			<a href="/CursoCSS">CursoCSS</a> 
-		</li>
-		<li>
-			<a href="/Bikes">Bikes</a>
-		</li>
-		<li>
-			<a href="/Porfolio">Porfolio</a>			
-		</li>
-		<li>
-			<a href="/osu.ppy.sh">Osu!</a>
-		</li>
-	</ul>
-
+	<div class="wrap">
+		<div class="links">
+			<a href="/osu.ppy.sh" style="background-image:url(images/osu.png);">osu.ppy.sh</a>
+			<a href="/Bikes" style="background-image:url(images/bikes.png)">Bikes</a>
+			<a href="/Porfolio" style="background-image:url(images/porfolio.png)">Porfolio</a>
+			<a href="/CursoCSS" style="background-image:url(images/curso.png)">Curso CSS</a>
+		</div>
+	</div>
 
 </body>
 </html>
